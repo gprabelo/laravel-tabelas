@@ -1,23 +1,4 @@
 
-# Introdução à Rest APIs com Laravel 10.x
-
-- :movie_camera: [Acesse a Aula](https://www.youtube.com/watch?v=AO3gug_3DRs).
-
-
-Links Úteis:
-
-- :tada: [Saiba Mais](https://linktr.ee/especializati)
-
-## Passo a passo para rodar o projeto
-Clone Repositório
-```sh
-git clone https://github.dev/especializati/laravel-10-rest-api.git app-laravel
-```
-```sh
-cd app-laravel/
-```
-
-
 Crie o Arquivo .env
 ```sh
 cp .env.example .env

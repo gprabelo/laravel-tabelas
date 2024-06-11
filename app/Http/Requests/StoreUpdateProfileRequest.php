@@ -23,6 +23,7 @@ class StoreUpdateProfileRequest extends FormRequest
     {
         $rules = [
             'profile_name' => 'required|min:3|max:255',
+            'user_id' => 'required'
         ];
         
         return $rules;

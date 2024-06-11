@@ -28,15 +28,14 @@ class ProfileController extends Controller
 
     public function store(StoreUpdateProfileRequest $request)
     {
-        // $data = $request->validated();
+        $data = $request->validated();
         // $data['password'] = bcrypt($request->password);
+        $profile = $this->repository->create($data);
 
-        // $profile = $this->repository->create($data);
+        return new ProfileResource($profile);
+        // Profile::create($this->repository);
 
-        // return new ProfileResource($profile);
-        Profile::create($request->all());
-
-        return redirect('profile');
+        // return redirect('profile');
     }
 
     public function show(string $id)
